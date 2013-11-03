@@ -64,5 +64,10 @@ module SampleApp
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    # From Heroku site: While precompiling assets, in Rails 3.x, you can prevent initializing
+    # your application and connecting to the database by ensuring that the following line is
+    # in your config/application.rb:
+    config.assets.initialize_on_precompile = false
   end
 end
